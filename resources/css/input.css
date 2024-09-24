@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Khand";
+  src: url("/resources/fonts/IRANYekanRegular.ttf");
+}
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/resources/fonts/IRANSansX-Regular.ttf");
+}
+@font-face {
+  font-family: "IR_Kelma";
+  src: url("/resources/fonts/Kalameh-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Keania_One";
+  src: url("/resources/fonts/KeaniaOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Khand_Numerals";
+  src: url("/resources/fonts/Kalameh\(FaNum\)-Regular.ttf");
+}
+@font-face {
+  font-family: "IR_Kelma_Numerals";
+  src: url("/resources/fonts/IRANYekanExtraBoldFaNum.ttf");
+}
+.reviewStars input:not(:checked) ~ label:hover,
+.reviewStars input:not(:checked) ~ label:hover ~ label > svg > path {
+  fill: #facc15;
+}
+.reviewStars input:checked ~ label > svg > path {
+  fill: #facc15;
+}
+.swiper-pagination-bullet {
+  background-color: #035146 !important;
+  opacity: 100%;
+  transition: opacity 500ms;
+  padding: 2.5vw !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

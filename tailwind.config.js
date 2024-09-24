@@ -1,0 +1,63 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      backgroundImage: {
+        empty_star: "url('SVGs/empty_star.svg')",
+        full_star: "url('SVGs/full_star.svg')",
+      },
+      fontFamily: {
+        IRANSansX: ["IRANSansX"],
+        IR_Kelma: ["IR_Kelma"],
+        Khand: ["Khand"],
+        Keania_One: ["Keania_One"],
+        Khand_Numerals: ["Khand_Numerals"],
+        IR_Kelma_Numerals: ["IR_Kelma_Numerals"],
+      },
+      colors: {
+        "rgba(255,201,35,1)": "rgba(255, 201, 35, 1)",
+        "rgba(255,201,35,25%)": "rgba(255, 201, 35, 25%)",
+        "rgba(3,81,70,1)": "rgba(3, 81, 70, 1)",
+        "rgba(3,81,70,25%)": "rgba(3, 81, 70, 25%)",
+        "rgba(3,81,70,12%)": "rgba(3, 81, 70, 12%)",
+        "rgba(0,0,0,25%)": "rgba(0, 0, 0, 25%)",
+        "rgba(140,138,145,1)": "rgba(140, 138, 145, 1)",
+        "rgba(138,149,158,20%)": "rgba(138, 149, 158, 20%)",
+        "rgba(138,149,158,60%)": "rgba(138 ,149 ,158 , 60%)",
+        "rgba(209,213,219,50%)": "rgba(209, 213, 219, 50%)",
+        "rgba(31,41,55,1)": "rgba(31, 41, 55, 1)",
+        "rgba(55,65,81,1)": "rgba(55, 65, 81, 1)",
+        "rgba(203,213,225,1)": "rgba(203, 213, 225, 1)",
+        "rgba(0,0,0,10%)": "rgba(0, 0, 0, 10%)",
+        "rgba(0,0,0,16%)": "rgba(0, 0, 0, 16%)",
+        "rgba(0,0,0,40%)": "rgba(0, 0, 0, 40%)",
+        "rgba(175,175,175,1)": "rgba(175, 175, 175, 1)",
+        "rgba(224,234,232,1)": "rgba(224, 234, 232, 1)",
+        "rgba(190,189,189,1)": "rgba(190, 189, 189, 1)",
+        "rgba(113,111,116,1)": "rgba(113, 111, 116, 1)",
+        "rgba(235,238,239,1)": "rgba(235, 238, 239, 1)",
+        "rgba(75,85,99,1)": "rgba(75, 85, 99, 1)"
+      },
+      boxShadow: {
+        "0px,16px,46px,0px": "0px 16px 46px 0px",
+        "0px,0px,3.5px,0px": "0px 0px 3.5px 0px",
+        "FAQ-box": "0px 2.84px 9.93px 0px",
+        "0px,4px,14px,0px": "0px 4px 14px 0px",
+        "0px,4px,4px,0px": "0px 4px 4px 0px",
+        "0px,14px,4px,0px": "0px 14px 4px 0px",
+        "0px,10px,50px,4px": "0px 10px 50px 4px",
+        "0px,25px,50px,-12px": "0px 25px 50px -12px",
+        "0px,0px,12.3px,0px": "0px 0px 12.3px 0px",
+        "0px,0px,4px,0px": "0px 0px 4px 0px",
+        "0px,4px,11.7px,0px": "0px 4px 11.7px 0px",
+        "0px,4px,24px,0px": "0px 4px 24px 0px",
+      },
+      transitionProperty: {
+        height: "height",
+        flexBasis: "flex-basis",
+      },
+    },
+  },
+  plugins: [],
+};

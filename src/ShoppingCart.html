@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/resources/css/output.css" />
+  </head>
+  <body>
+    <main>
+      <div
+        dir="rtl"
+        class="mx-auto flex w-[90%] flex-col items-stretch justify-center gap-3 font-Khand md:flex-row"
+      >
+        <!-- product list -->
+        <div
+          class="relative flex flex-col rounded-sm shadow-0px,25px,50px,-12px shadow-rgba(209,213,219,50%) max-md:order-2 max-md:gap-[5vw] md:h-full md:basis-2/3 md:gap-0 md:self-center md:rounded-[0.5vw] md:outline md:outline-1 md:outline-rgba(3,81,70,1)"
+        >
+          <!-- list headers -->
+          <div
+            class="border-b border-b-rgba(203,213,225,1) bg-white font-Khand text-[1.25vw] font-semibold max-md:hidden md:rounded-t-[0.5vw] md:py-[1vw]"
+          >
+            <div class="mx-auto flex w-[95%] gap-[1vw]">
+              <div class="basis-[18.2%]">تصویر محصول</div>
+              <div class="basis-[24.4%]">اسم محصول</div>
+              <div class="basis-[14.2%]">قیمت</div>
+              <div class="basis-[14.2%]">تخفیف</div>
+              <div class="basis-[14.2%]">تعداد</div>
+              <div class="basis-[14.2%]">جمع ردیف</div>
+            </div>
+          </div>
+          <!-- product 1 -->
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+          <!-- product 2 -->
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:border-b-rgba(203,213,225,1) md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+          <!-- product 3 -->
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:border-b-rgba(203,213,225,1) md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:border-b-rgba(203,213,225,1) md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:border-b-rgba(203,213,225,1) md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:border-b-rgba(203,213,225,1) md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative flex gap-[2vw] px-[3vw] py-[2.5vw] font-Khand max-md:mx-auto max-md:w-[95%] max-md:rounded-[2.5vw] max-md:border max-md:border-rgba(3,81,70,1) max-md:shadow-0px,0px,12.3px,0px max-md:shadow-rgba(0,0,0,16%) md:border-b md:border-b-rgba(203,213,225,1) md:px-0 md:py-[0.125vw] last:md:border-b-0"
+          >
+            <!-- mobile cross -->
+            <div
+              class="absolute left-[1.5vw] top-[2vw] flex w-full justify-end md:hidden"
+            >
+              <button class="w-[2vw]">
+                <img class="w-full" src="SVGs/shopping-cart-cross.svg" alt="" />
+              </button>
+            </div>
+            <!-- product info -->
+            <div
+              class="flex w-full gap-[2.5vw] md:mx-auto md:w-[95%] md:gap-[1vw] md:py-[0.75vw]"
+            >
+              <div class="flex basis-[20%] md:basis-[14.2%]">
+                <img
+                  class="rounded-[2vw] bg-rgba(224,234,232,1) shadow-0px,4px,4px,0px shadow-rgba(0,0,0,10%) md:h-[5.5vw] md:w-[5.5vw] md:rounded-[0.75vw] md:bg-white"
+                  src="SVGs/shopping-cart-Product.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-evenly gap-[1.5vw] text-[2.75vw] md:flex md:basis-[28.4%] md:items-center md:text-[1.15vw] md:font-medium md:tracking-tighter"
+              >
+                استار شیپ (SpaceX Starship)
+                <div class="text-[2vw] text-rgba(190,189,189,1) md:hidden">
+                  <span class="line-through">۱,۵۳۴,۲۰۰ تومان </span>
+                  <span class="mr-[1vw]">%20</span>
+                </div>
+                <div class="text-[2.75vw] md:hidden">۱,۵۳۴,۲۰۰ تومان</div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+              <div
+                class="basis-[10.2%] text-[1.15vw] max-md:hidden md:flex md:items-center"
+              >
+                % ۰
+              </div>
+              <div
+                class="mr-auto basis-1/5 max-md:self-end md:mr-0 md:flex md:basis-[18.2%] md:items-center md:text-[1.15vw]"
+              >
+                <div class="flex w-full justify-between md:justify-evenly">
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-minus.svg"
+                      alt=""
+                    />
+                  </button>
+                  <label
+                    class="mt-[0.25vw] text-[3vw] max-md:self-center md:text-[1.5vw]"
+                    for="item1"
+                    >1</label
+                  >
+                  <button class="md:basis-[30%]">
+                    <img
+                      class="w-[5vw] md:w-full"
+                      src="SVGs/shopping-cart-plus.svg"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-md:hidden md:flex md:basis-[14.2%] md:items-center md:text-[1.15vw]"
+              >
+                ۱,۵۳۴,۲۰۰
+                <span class="md:text-[0.75vw]">تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart sum -->
+        <div
+          dir="rtl"
+          class="relative left-0 top-0 w-full basis-1/3 items-center justify-center max-md:order-1 md:sticky md:h-fit"
+        >
+          <img class="w-full" src="SVGs/shopping-cart-Cart.svg" alt="" />
+          <div
+            class="absolute left-[5%] top-[10%] flex h-[80%] w-[90%] flex-col justify-between px-2"
+          >
+            <div class="flex items-center font-Khand font-semibold">
+              <img
+                class="h-[10vw] w-[10vw] rounded bg-rgba(255,201,35,1) p-1 md:h-[3vw] md:w-[3vw]"
+                src="SVGs/shopping-cart-cartIcon.svg"
+                alt=""
+              />
+              <h1 class="mx-[1vw] text-[4.5vw] md:text-[1.35vw]">
+                خلاصه سبد خرید شما
+              </h1>
+            </div>
+            <h3
+              class="border-b border-b-rgba(203,213,225,1) pb-2 font-Khand text-[3vw] md:text-[1vw]"
+            >
+              در سبد خرید شما 3 کالا موجود است
+            </h3>
+            <div class="flex justify-between text-[4vw] md:text-[1.25vw]">
+              <p class="">مبلغ کل</p>
+              <p class="">0</p>
+            </div>
+            <div class="my-2 flex justify-between text-[4vw] md:text-[1.25vw]">
+              <p>مالیات و ارزش افزوده</p>
+              <p>به حساب ما</p>
+            </div>
+            <div
+              class="flex justify-between border-b border-b-rgba(203,213,225,1) pb-2 text-[4vw] md:text-[1.25vw]"
+            >
+              <p>هزینه ارسال</p>
+              <p>تیپاکس</p>
+            </div>
+            <div
+              class="flex justify-between font-Khand text-[4.5vw] font-semibold md:my-[2%] md:text-[1.5vw]"
+            >
+              <p>مبلغ نهایی</p>
+              <p>0</p>
+            </div>
+            <div class="mx-auto hidden w-[90%] md:visible">
+              <button
+                class="w-full rounded-2xl bg-rgba(255,201,35,1) py-1 font-Khand font-semibold md:py-1 md:text-[1.25vw]"
+              >
+                تکمیل خرید
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile sticky cart -->
+      <div
+        dir="rtl"
+        class="sticky bottom-0 mt-[5vw] flex h-[30vw] w-full flex-col justify-between rounded-t-[5vw] bg-white pb-[6vw] pt-[5vw] font-Khand shadow-0px,0px,4px,0px shadow-rgba(0,0,0,40%) md:hidden"
+      >
+        <div
+          class="mx-auto flex w-[80%] justify-between text-[3vw] font-semibold"
+        >
+          <p>مبلغ نهایی (3):</p>
+          <p>1,534,200 تومان</p>
+        </div>
+        <form action="" class="mx-auto w-[70%]">
+          <button
+            type="submit"
+            class="h-[8vw] w-full rounded-[5vw] bg-rgba(255,201,35,1) text-[3vw] font-bold tracking-tighter shadow-0px,16px,46px,0px shadow-rgba(255,201,35,25%)"
+          >
+            تکمیل خرید
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "main-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "tailwindcss -i ./resources/css/input.css -o ./resources/css/output.css --watch",
+    "Main": "prettier --write ./src/MainPage.html",
+    "Cart": "prettier --write ./src/ShoppingCart.html",
+    "Product": "prettier --write ./src/ProductPage.html",
+    "About": "prettier --write ./src/AboutUs.html",
+    "Contact": "prettier --write ./src/ContactUs.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "swiper": "^11.1.12"
+  }
+}

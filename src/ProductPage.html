@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="/resources/css/output.css" />
+  </head>
+  <body>
+    <main>
+      <!-- product information section -->
+      <div
+        dir="rtl"
+        class="relative mx-auto mb-[10%] flex w-[90%] flex-col items-stretch justify-center md:flex-row overflow-hidden"
+      >
+        <!-- header -->
+        <h1
+          style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
+          class="absolute right-[25%] top-0 pb-2 pt-1.5 font-IR_Kelma text-[6vw] text-rgba(3,81,70,1) md:-top-[2.5%] md:right-[15%] md:text-[3vw]"
+        >
+          مشخصات محصول
+        </h1>
+        <!-- product section bg images -->
+        <div class="w-full">
+          <img
+            class="-z-10 w-full md:hidden"
+            src="SVGs/product-page-smallbg.svg"
+            alt=""
+          />
+          <img
+            class="-z-10 w-full max-md:hidden"
+            src="SVGs/product-page-main-bg.svg"
+            alt=""
+          />
+          <img
+            class="absolute -top-[20%] -left-1/4 w-2/5 max-md:hidden"
+            src="SVGs/product-page-desktop_bg_line1.svg"
+            alt=""
+          />
+          <img
+            class="absolute -bottom-[37.5%] -right-[14%] w-[45%] max-md:hidden"
+            src="SVGs/product-page-desktop_bg_line2.svg"
+            alt=""
+          />
+        </div>
+        <!-- information container -->
+        <div
+          class="absolute bottom-0 left-0 right-0 top-[7.5%] flex h-full flex-col items-stretch justify-start gap-[2vw] md:flex-row md:justify-normal md:gap-[6vw]"
+        >
+          <!-- product images -->
+          <div
+            class="relative px-[5%] md:flex md:basis-[40%] md:justify-end md:px-0"
+          >
+            <div
+              class="flex gap-3 max-md:max-h-[90vw] md:absolute md:top-[4vw] md:h-[70%] md:w-[90%] md:justify-center md:gap-[2vw]"
+            >
+              <div
+                class="flex basis-1/4 flex-col justify-between gap-4 md:basis-[20%] md:gap-[2vw]"
+              >
+                <div
+                  class="flex grow-0 basis-1/4 cursor-pointer items-center justify-center overflow-hidden rounded-md bg-white md:rounded-[1vw]"
+                  onclick="changeProductImage('pr2')"
+                >
+                  <img
+                    class="h-full"
+                    id="pr2"
+                    src="SVGs/product-page-pr2.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="flex grow-0 basis-1/4 cursor-pointer items-center justify-center overflow-hidden rounded-md bg-white md:rounded-[1vw]"
+                  onclick="changeProductImage('pr3')"
+                >
+                  <img
+                    id="pr3"
+                    class="h-full"
+                    src="SVGs/product-page-pr3.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="flex grow-0 basis-1/4 cursor-pointer items-center justify-center overflow-hidden rounded-md bg-white md:rounded-[1vw]"
+                  onclick="changeProductImage('pr4')"
+                >
+                  <img
+                    id="pr4"
+                    class="h-full"
+                    src="SVGs/product-page-pr4.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="flex grow-0 basis-1/4 cursor-pointer items-center justify-center overflow-hidden rounded-md bg-white md:rounded-[1vw]"
+                  onclick="changeProductImage('pr5')"
+                >
+                  <img
+                    id="pr5"
+                    class="h-full"
+                    src="SVGs/product-page-pr5.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="md:basis5/6 flex basis-3/4 justify-center rounded-lg bg-white shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) max-md:h-[90vw] md:rounded-[1vw]"
+              >
+                <img
+                  id="curImg"
+                  class="mb-[8vw] w-full md:mb-[4vw]"
+                  src="SVGs/product-page-pr1.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- product information -->
+          <div
+            class="flex flex-col items-stretch px-[2.5%] py-[5%] md:basis-[50%]"
+          >
+            <div class="border-b 2xl:border-b-2">
+              <h2
+                class="mb-[2.5%] pr-2 font-IR_Kelma text-[4vw] text-rgba(3,81,70,1) md:px-0 md:text-[2.5vw]"
+              >
+                استار شیپ
+                <span
+                  class="font-Khand text-[2.5vw] tracking-tighter text-rgba(113,111,116,1) md:text-[2vw]"
+                  >(SpaceX Starship)</span
+                >
+              </h2>
+            </div>
+            <div
+              class="flex items-center gap-2 border-b p-[2.5%] font-Khand md:px-0 2xl:border-b-2"
+            >
+              <div
+                class="relative basis-1/2 rounded-full bg-white py-2 shadow-0px,4px,11.7px,0px shadow-rgba(0,0,0,25%) md:basis-2/5"
+              >
+                <div class="mx-[10%]">
+                  <h6
+                    class="text-[3vw] text-rgba(113,111,116,1) md:text-[1.3vw]"
+                  >
+                    جنس
+                  </h6>
+                  <p class="text-[2.5vw] md:text-[1vw] md:tracking-tighter">
+                    پلاستیک درجه یک و مقاوم
+                  </p>
+                </div>
+              </div>
+              <div
+                class="relative basis-1/2 rounded-full bg-white py-2 shadow-0px,4px,11.7px,0px shadow-rgba(0,0,0,25%) md:basis-2/5"
+              >
+                <div class="mx-[10%]">
+                  <h6
+                    class="text-[3vw] text-rgba(113,111,116,1) md:text-[1.3vw]"
+                  >
+                    ابعاد
+                  </h6>
+                  <p class="text-[2.5vw] md:text-[1vw] md:tracking-tighter">
+                    ۳۴۰x ۲۰۰x ۴۰ میلی متر
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="border-b p-[2.5%] md:p-0 2xl:border-b-2">
+              <p
+                class="my-2 text-justify font-Khand text-[3.5vw] md:text-[1vw]"
+              >
+                فضا پیمای اسپیس اکس استارشیپ و پرتابگر سوپرهوی یک سامانه حمل
+                انسان و محموله به مدار زمین، ماه، مریخ و حتی فراتر از آن است که
+                قابلیت استفاده کاملا مجدد و حمل بیش از 100 تن بار را دارد. ماکت
+                این مجموعه در مقیاس 1/200 با ارتفاع حدودا 60 سانتی متر توسط
+                پراپلر تولید شده است
+              </p>
+            </div>
+            <div
+              class="flex border-b p-[2.5%] font-Khand md:px-0 md:py-[1%] 2xl:border-b-2"
+            >
+              <img
+                class="w-[5vw] md:w-[2vw]"
+                src="SVGs/product-page-truck-kun.svg"
+                alt=""
+              />
+              <p class="mx-[2%] text-[4vw] md:text-[1.5vw]">ارسال رایگان</p>
+            </div>
+            <div
+              class="flex p-[2.5%] font-Khand text-[5vw] md:p-0 md:text-[2.2vw]"
+            >
+              <h3 class="text-white">
+                ۱,۷۹۹,۰۰۰
+                <span class="text-rgba(3,81,70,1)">تومان</span>
+              </h3>
+            </div>
+            <!-- product form -->
+            <form
+              action=""
+              class="mt-[10vw] flex justify-evenly md:mt-[7.5vw] md:justify-end md:gap-4"
+            >
+              <div
+                class="flex w-full basis-1/4 items-center justify-around rounded-[1.2em] border-2 border-rgba(3,81,70,1) md:basis-2/5 md:rounded-[1vw]"
+              >
+                <button
+                  class="mx-[5%] rounded-[1vw] bg-rgba(3,81,70,1) md:rounded-[0.25vw]"
+                >
+                  <img
+                    class="w-[5vw] md:w-[2vw]"
+                    src="SVGs/product-page-plus.svg"
+                    alt=""
+                  />
+                </button>
+                <span class="text-[4vw] text-white md:text-[2vw]" for=""
+                  >۱</span
+                >
+                <button
+                  class="mx-[5%] rounded-[1vw] bg-rgba(3,81,70,1) md:rounded-[0.25vw]"
+                >
+                  <img
+                    class="w-[5vw] md:w-[2vw]"
+                    src="SVGs/product-page-minus.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div
+                class="flex basis-[65%] rounded-[1.2em] border border-rgba(3,81,70,1) bg-rgba(3,81,70,1) px-[5%] py-[3%] font-semibold md:basis-2/5 md:rounded-[1vw]"
+              >
+                <button class="mx-auto text-[4vw] text-white md:text-[1vw]">
+                  <img
+                    class="inline w-[8vw] md:w-[2vw]"
+                    src="SVGs/product-page-Cart.svg"
+                    alt=""
+                  />
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- rating at the bottom of product bg -->
+        <div
+          class="absolute bottom-[1%] right-[22%] flex gap-1 md:right-[15.5%]"
+        >
+          <img
+            class="w-[30vw] md:w-[12.5vw]"
+            src="SVGs/product-page-stars.svg"
+            alt=""
+          />
+          <p class="text-[3vw] text-rgba(113,111,116,1) md:text-[1.2vw]">
+            از مجموع ۱۱ امتیاز
+          </p>
+        </div>
+      </div>
+      <!-- comment section -->
+      <section class="mb-[10%] md:mb-0">
+        <!-- comment 1 -->
+        <div dir="rtl" class="mx-auto w-[90%] p-[2.5%] font-Khand">
+          <div
+            class="relative h-fit rounded-[2em] bg-white p-[5%] py-[10%] shadow-0px,4px,14px,0px shadow-rgba(138,149,158,60%) md:rounded-[2.5vw] md:px-[5%] md:py-[2.5%]"
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="flex w-full items-center justify-between gap-2 md:justify-normal"
+              >
+                <img
+                  class="w-[20%] md:w-[8%]"
+                  src="SVGs/product-page-avatar.svg"
+                  alt=""
+                />
+                <p
+                  class="ml-auto text-[4vw] font-semibold md:ml-0 md:mr-[1vw] md:pt-[0.5vw] md:text-[1.5vw]"
+                >
+                  آرینا توکلی
+                </p>
+                <img
+                  class="w-[40%] md:mr-auto md:w-[20%]"
+                  src="SVGs/product-page-stars.svg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="px-2 py-1 text-justify text-[3vw] md:pl-[2vw] md:pr-[8.5vw] md:text-[1vw]"
+              >
+                اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به
+                متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم
+                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </p>
+              <p
+                class="absolute bottom-[10%] left-[8%] text-[3vw] text-rgba(113,111,116,1) md:left-[5%] md:text-[1vw]"
+              >
+                ۱ دقیقه پیش
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- comment 2 -->
+        <div dir="rtl" class="mx-auto w-[90%] p-[2.5%] font-Khand">
+          <div
+            class="relative h-fit rounded-[2em] bg-white p-[5%] py-[10%] shadow-0px,4px,14px,0px shadow-rgba(138,149,158,60%) md:rounded-[2.5vw] md:px-[5%] md:py-[2.5%]"
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="flex w-full items-center justify-between gap-2 md:justify-normal"
+              >
+                <img
+                  class="w-[20%] md:w-[8%]"
+                  src="SVGs/product-page-avatar.svg"
+                  alt=""
+                />
+                <p
+                  class="ml-auto text-[4vw] font-semibold md:ml-0 md:mr-[1vw] md:pt-[0.5vw] md:text-[1.5vw]"
+                >
+                  آرینا توکلی
+                </p>
+                <img
+                  class="w-[40%] md:mr-auto md:w-[20%]"
+                  src="SVGs/product-page-stars.svg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="px-2 py-1 text-justify text-[3vw] md:pl-[2vw] md:pr-[8.5vw] md:text-[1vw]"
+              >
+                اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به
+                متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم
+                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است.
+              </p>
+              <p
+                class="absolute bottom-[10%] left-[8%] text-[3vw] text-rgba(113,111,116,1) md:left-[5%] md:text-[1vw]"
+              >
+                ۱ دقیقه پیش
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- review section -->
+      <div dir="rtl" class="mx-auto w-[90%] md:ml-auto md:mr-0 md:w-[94%]">
+        <div class="relative overflow-hidden">
+          <!-- review section bg images -->
+          <div class="w-full">
+            <img
+              class="-z-20 w-full md:hidden"
+              src="SVGs/product-page-mobile-review.svg"
+              alt=""
+            />
+            <img
+              class="-z-20 w-full max-md:hidden"
+              src="SVGs/product-page-desktop_review.svg"
+              alt=""
+            />
+            <img
+              class="absolute left-[8%] top-[2%] z-10 w-[8vw]"
+              src="SVGs/product-page-rocketo.svg"
+              alt=""
+            />
+            <img
+              class="absolute -top-[35%] z-0 w-full md:hidden"
+              src="SVGs/product-page-line_top.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute left-[15%] top-[5%] text-center md:left-[22.5%] md:top-[27.5%]"
+          >
+            <h2
+              style="text-shadow: 2.04px 0px 2.04px rgba(0, 0, 0, 0.25)"
+              class="mb-[5%] font-IR_Kelma text-[4vw] text-white md:text-[3vw]"
+            >
+              <span class="text-rgba(255,201,35,1)">نظرات</span>
+              خود را اینجا ثبت کنید
+            </h2>
+            <p class="font-Khand text-[2vw] text-white md:text-[1.5vw]">
+              با ثبت نظرات خود در مورد محصولات، ما را در رائه بهتر محصولات یاری
+              رسانید
+            </p>
+          </div>
+          <div
+            class="reviewStars absolute right-[15%] top-[28%] mx-auto flex w-[70%] flex-col gap-[1.25vw] sm:gap-[2vw] font-Khand md:right-1/4 md:top-1/2 md:w-[40%] md:gap-[1.25vw] lg:gap-[1.5vw]"
+          >
+            <h2
+              class="text-[3.5vw] font-semibold text-rgba(3,81,70,1) md:text-[1.5vw]"
+            >
+              در مورد
+              <span class="text-rgba(255,201,35,1)"> استار شیپ </span>
+            </h2>
+            <div
+              class="flex max-h-[6vw] items-center gap-2 overflow-hidden md:max-h-[2vw] md:gap-3"
+            >
+              <div>
+                <p class="text-[3vw] md:text-[1vw]">امتیاز دهید</p>
+              </div>
+              <!-- review stars -->
+              <div
+                class="reviewStars flex w-[20vw] gap-[1vw] md:w-[1.8vw] md:gap-[0.5vw] 2xl:w-[10vw]"
+              >
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="rating"
+                  id="rating-5"
+                />
+                <label for="rating-5">
+                  <svg
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="#facc15"
+                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                      fill="none"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="rating"
+                  id="rating-4"
+                />
+                <label for="rating-4">
+                  <svg
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="#facc15"
+                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                      fill="none"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="rating"
+                  id="rating-3"
+                />
+                <label for="rating-3">
+                  <svg
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="#facc15"
+                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                      fill="none"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="rating"
+                  id="rating-2"
+                />
+                <label for="rating-2">
+                  <svg
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="#facc15"
+                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                      fill="none"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="hidden"
+                  type="radio"
+                  name="rating"
+                  id="rating-1"
+                />
+                <label for="rating-1">
+                  <svg
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="#facc15"
+                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                      fill="none"
+                    />
+                  </svg>
+                </label>
+              </div>
+            </div>
+            <!-- review form -->
+            <form action="" class="flex flex-col gap-1">
+              <label
+                class="mb-[1%] text-[3vw] text-rgba(113,111,116,1) md:text-[1vw]"
+                for="review"
+              >
+                متن نظر
+                <span class="text-red-700"> * </span>
+              </label>
+              <!-- text input -->
+              <textarea
+                class="mb-[2.5%] min-h-[30vw] resize-none rounded-[2vw] border border-rgba(3,81,70,1) p-[2vw] text-[3vw] outline-rgba(3,81,70,1) md:min-h-[9.5vw] md:rounded-[0.5vw] md:p-[0.5vw] md:text-[1vw]"
+                name="review"
+                id="review"
+                placeholder="بنویسید"
+                required
+              ></textarea>
+              <!-- submit btn -->
+              <div
+                class="mx-auto w-[45%] rounded-full bg-rgba(3,81,70,1) text-center shadow-0px,4px,24px,0px shadow-rgba(0,0,0,25%) md:w-[28%]"
+              >
+                <button
+                  class="p-[2%] text-[4vw] font-semibold text-white md:px-[3%] md:py-[5%] md:text-[1.2vw]"
+                  type="submit"
+                >
+                  ثبت نظر
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/resources/js/product.js"></script>
+  </body>
+</html>
