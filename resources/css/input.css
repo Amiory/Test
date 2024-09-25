@@ -35,6 +35,21 @@
   transition: opacity 500ms;
   padding: 2.5vw !important;
 }
+.products .swiper-button-next,
+.products .swiper-button-prev {
+  color: #fff !important;
+  background-color: rgba(3, 81, 70, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.products .swiper-button-next::after,
+.products .swiper-button-prev::after {
+  display: none; 
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
