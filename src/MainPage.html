@@ -11,7 +11,6 @@
     />
   </head>
   <body>
-    <header></header>
     <main class="mb-[15vw] space-y-[15vw] md:mb-[7.5vw] md:space-y-[7.5vw]">
       <!-- Slider main container -->
       <section dir="rtl" class="swiper relative w-full !pb-6 sm:!pb-8">
@@ -110,7 +109,7 @@
       <!-- product section -->
       <section
         dir="rtl"
-        class="relative !mb-[40vw] flex justify-center pt-[40vw] md:!mb-[5vw] md:pt-[10vw]"
+        class="products relative !mb-[40vw] flex justify-center pt-[40vw] md:!mb-[5vw] md:pt-[10vw]"
       >
         <!-- header -->
         <div
@@ -137,78 +136,41 @@
             alt=""
           />
         </div>
-        <!-- next & prev btns -->
+
         <div
-          class="absolute bottom-[40vw] left-[5vw] z-20 flex w-[90%] items-center md:bottom-auto md:left-0 md:top-[10vw] md:w-full md:px-[3.5vw]"
+          class="productSwiper mt-16 w-[90%] overflow-hidden !p-2 sm:mt-32 md:mt-0 md:w-[80%]"
         >
-          <div class="absolute">
-            <button
-              class="rounded-full bg-rgba(3,81,70,1) px-[3vw] py-[2.25vw] md:px-[1vw] md:py-[0.75vw]"
-              onclick="changeProduct(1)"
-              id="nextProduct"
-            >
-              <svg
-                class="w-[2vw] md:w-[0.75vw]"
-                viewBox="0 0 9 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.12132 8.70711C8.51184 8.31658 8.51184 7.68342 8.12132 7.29289L1.75736 0.928932C1.36684 0.538408 0.73367 0.538408 0.343146 0.928932C-0.0473785 1.31946 -0.0473785 1.95262 0.343146 2.34315L6 8L0.343146 13.6569C-0.0473785 14.0474 -0.0473785 14.6805 0.343146 15.0711C0.73367 15.4616 1.36684 15.4616 1.75736 15.0711L8.12132 8.70711ZM6 9H7.41421V7H6V9Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="absolute left-0 md:left-[3.75vw]">
-            <button
-              class="hidden rounded-full bg-rgba(3,81,70,1) px-[3vw] py-[2.25vw] md:px-[1vw] md:py-[0.75vw]"
-              onclick="changeProduct(-1)"
-              id="prevProduct"
-            >
-              <svg
-                class="w-[2vw] md:w-[0.75vw]"
-                viewBox="0 0 9 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.87868 8.70711C0.488155 8.31658 0.488155 7.68342 0.87868 7.29289L7.24264 0.928932C7.63316 0.538408 8.26633 0.538408 8.65685 0.928932C9.04738 1.31946 9.04738 1.95262 8.65685 2.34315L3 8L8.65685 13.6569C9.04738 14.0474 9.04738 14.6805 8.65685 15.0711C8.26633 15.4616 7.63316 15.4616 7.24264 15.0711L0.87868 8.70711ZM3 9H1.58579V7H3V9Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- product slider -->
-        <div
-          class="product-carousel-container max-w-full overflow-hidden md:w-[90%]"
-        >
-          <div
-            class="slider flex w-full gap-[20vw] p-[10vw] pb-[17.5vw] transition-transform duration-500 md:gap-[5vw] md:px-[4vw] md:py-0 md:pb-[7.5vw]"
-          >
-            <!-- product 1-->
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- Slide #1 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
-              >
-                <img
-                  class="w-[25vw] md:w-[8vw]"
-                  src="SVGs/main-page-spaceXstarship.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2 class="text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]">
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-spaceXstarship.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
+                >
                   استارشیپ
-                </h2>
-                <h3
-                  class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
                 >
                   (SpaceX Starship)
-                </h3>
+                </a>
               </div>
               <form
                 class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
@@ -227,31 +189,37 @@
                 </button>
               </form>
             </div>
-            <!-- product 2 -->
+            <!-- Slide #2 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[1vw]"
-              >
-                <img
-                  class="w-[59.25vw] md:w-[20vw]"
-                  src="SVGs/main-page-boeing.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2
-                  class="text-[5vw] tracking-tighter md:mb-[0.2vw] md:text-[1.5vw]"
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-boeing.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
                 >
                   بویینگ ۷۴۷ اس پی ایران ایر
-                </h2>
-                <h3 class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw]">
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
+                >
                   (boeing747sp)
-                </h3>
+                </a>
               </div>
               <form
-                class="flex justify-center gap-[1vw] font-Khand text-[3vw] md:gap-[1vw]"
+                class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
                 action=""
               >
                 <div
@@ -267,28 +235,34 @@
                 </button>
               </form>
             </div>
-            <!-- product 3 -->
+            <!-- Slide #3 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full items-center justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-0 md:pr-[1vw]"
-              >
-                <img
-                  class="w-[49vw] md:ml-[3vw] md:w-[17.6vw]"
-                  src="SVGs/main-page-nasa-sarutnV.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2
-                  class="text-[5vw] tracking-tighter md:mb-[0.2vw] md:text-[1.5vw]"
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-nasa-sarutnV.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
                 >
                   موشک سترن۵
-                </h2>
-                <h3 class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw]">
-                  (Nasa SaturnV)
-                </h3>
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
+                >
+                  (Nasa SaturnV)</a
+                >
               </div>
               <form
                 class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
@@ -307,28 +281,34 @@
                 </button>
               </form>
             </div>
-            <!-- product 4 -->
+            <!-- Slide #4 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
-              >
-                <img
-                  class="w-[25vw] md:w-[8vw]"
-                  src="SVGs/main-page-spaceXstarship.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2 class="text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]">
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-spaceXstarship.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
+                >
                   استارشیپ
-                </h2>
-                <h3
-                  class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
                 >
                   (SpaceX Starship)
-                </h3>
+                </a>
               </div>
               <form
                 class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
@@ -347,28 +327,34 @@
                 </button>
               </form>
             </div>
-            <!-- product 5 -->
+            <!-- Slide #5 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
-              >
-                <img
-                  class="w-[25vw] md:w-[8vw]"
-                  src="SVGs/main-page-spaceXstarship.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2 class="text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]">
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-spaceXstarship.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
+                >
                   استارشیپ
-                </h2>
-                <h3
-                  class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
                 >
                   (SpaceX Starship)
-                </h3>
+                </a>
               </div>
               <form
                 class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
@@ -387,28 +373,34 @@
                 </button>
               </form>
             </div>
-            <!-- product 6 -->
+            <!-- Slide #6 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
-              >
-                <img
-                  class="w-[25vw] md:w-[8vw]"
-                  src="SVGs/main-page-spaceXstarship.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2 class="text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]">
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-spaceXstarship.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
+                >
                   استارشیپ
-                </h2>
-                <h3
-                  class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
                 >
                   (SpaceX Starship)
-                </h3>
+                </a>
               </div>
               <form
                 class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
@@ -427,28 +419,80 @@
                 </button>
               </form>
             </div>
-            <!-- product 7 -->
+            <!-- Slide #7 -->
             <div
-              class="product mt-[10vw] flex min-w-full flex-col gap-[5vw] overflow-hidden rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:mx-0 md:mt-0 md:min-w-[24vw] md:basis-[30%] md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
             >
-              <div
-                class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
-              >
-                <img
-                  class="w-[25vw] md:w-[8vw]"
-                  src="SVGs/main-page-spaceXstarship.svg"
-                  alt=""
-                />
-              </div>
-              <div class="felx flex-col text-center font-Khand">
-                <h2 class="text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]">
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-spaceXstarship.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
+                >
                   استارشیپ
-                </h2>
-                <h3
-                  class="text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
                 >
                   (SpaceX Starship)
-                </h3>
+                </a>
+              </div>
+              <form
+                class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
+                action=""
+              >
+                <div
+                  class="basis-1/2 rounded-[15vw] border border-rgba(255,201,35,1) px-[2vw] py-[1vw] text-center font-semibold shadow-0px,0px,3.5px,0px shadow-rgba(3,81,70,25%) md:py-[0.5vw] md:text-[0.8vw]"
+                >
+                  ۱,۷۹۹,۰۰۰
+                  <span class="font-normal">تومان</span>
+                </div>
+                <button
+                  class="basis-1/2 rounded-[15vw] bg-rgba(255,201,35,1) px-[2vw] py-[1vw] text-center font-semibold tracking-tighter text-rgba(3,81,70,1) shadow-0px,0px,3.5px,0px shadow-rgba(3,81,70,25%) md:py-[0.5vw] md:text-[0.8vw]"
+                >
+                  افزودن به سبد خرید
+                </button>
+              </form>
+            </div>
+            <!-- Slide #8 -->
+            <div
+              class="swiper-slide !flex flex-col gap-[5vw] rounded-[3vw] bg-white p-[5vw] shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) md:gap-[1.25vw] md:rounded-[1vw] md:p-[1vw] md:pb-[1.75vw]"
+            >
+              <a href="">
+                <div
+                  class="mx-auto flex w-full justify-center rounded-[3vw] bg-rgba(3,81,70,12%) pb-[5vw] md:rounded-[1vw] md:pb-[2vw]"
+                >
+                  <img
+                    class="max-h-[50vw] w-full md:max-h-[15vw]"
+                    src="SVGs/main-page-spaceXstarship.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div class="flex flex-col items-center font-Khand">
+                <a
+                  class="w-fit text-[5vw] md:mb-[0.2vw] md:text-[1.5vw]"
+                  href=""
+                >
+                  استارشیپ
+                </a>
+                <a
+                  class="w-fit text-[3vw] text-rgba(140,138,145,1) md:text-[1vw] md:tracking-tighter"
+                  href=""
+                >
+                  (SpaceX Starship)
+                </a>
               </div>
               <form
                 class="flex justify-center gap-[1vw] font-Khand text-[3vw]"
@@ -468,6 +512,37 @@
               </form>
             </div>
           </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div
+          class="swiper-button-prev !left-[2.5vw] !top-[85%] z-10 !h-[8vw] !w-[8vw] sm:!h-12 sm:!w-12 md:!left-[3.75vw] md:!top-1/4 md:!h-[2.75vw] md:!w-[2.75vw]"
+        >
+          <svg
+            class="!w-[2vw] sm:!w-3 md:!w-[1vw]"
+            viewBox="0 0 9 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.292742 8.70711C-0.0977821 8.31658 -0.0977821 7.68342 0.292742 7.29289L6.6567 0.928932C7.04723 0.538408 7.68039 0.538408 8.07092 0.928932C8.46144 1.31946 8.46144 1.95262 8.07092 2.34315L2.41406 8L8.07092 13.6569C8.46144 14.0474 8.46144 14.6805 8.07092 15.0711C7.68039 15.4616 7.04723 15.4616 6.6567 15.0711L0.292742 8.70711ZM2.41406 9H0.999849V7H2.41406V9Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div
+          class="swiper-button-next !right-[2.5vw] !top-[85%] z-10 !h-[8vw] !w-[8vw] md:!right-[3.75vw] md:!top-1/4 md:!h-[2.75vw] md:!w-[2.75vw]"
+        >
+          <svg
+            class="!w-[2vw] md:!w-[1vw]"
+            viewBox="0 0 9 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.12132 8.70711C8.51184 8.31658 8.51184 7.68342 8.12132 7.29289L1.75736 0.928932C1.36684 0.538408 0.73367 0.538408 0.343146 0.928932C-0.0473785 1.31946 -0.0473785 1.95262 0.343146 2.34315L6 8L0.343146 13.6569C-0.0473785 14.0474 -0.0473785 14.6805 0.343146 15.0711C0.73367 15.4616 1.36684 15.4616 1.75736 15.0711L8.12132 8.70711ZM6 9H7.41421V7H6V9Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </section>
       <!-- comission tutorial -->
