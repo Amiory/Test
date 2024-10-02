@@ -22,8 +22,6 @@ const productSwiper = new Swiper(".productSwiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
-  // simulateTouch: false,
-  // touchEventsTarget: "container",
   spaceBetween: 20,
   // Navigation arrows
   navigation: {
@@ -39,6 +37,29 @@ const productSwiper = new Swiper(".productSwiper", {
     1024: {
       slidesPerView: 3,
       spaceBetween: 50,
+    },
+  },
+});
+
+const reviewSwiper = new Swiper(".reviewSwiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  spaceBetween: 20,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 25,
     },
   },
 });

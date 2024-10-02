@@ -11,12 +11,12 @@
       <!-- product information section -->
       <div
         dir="rtl"
-        class="relative mx-auto mb-[10%] flex w-[90%] flex-col items-stretch justify-center md:flex-row overflow-hidden"
+        class="relative mx-auto mb-[10%] flex w-[90%] flex-col items-stretch justify-center overflow-hidden md:flex-row"
       >
         <!-- header -->
         <h1
           style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
-          class="absolute right-[25%] top-0 pb-2 pt-1.5 font-IR_Kelma text-[6vw] text-rgba(3,81,70,1) md:-top-[2.5%] md:right-[15%] md:text-[3vw]"
+          class="absolute left-1/2 top-0 w-fit -translate-x-1/2 text-nowrap font-IR_Kelma text-[6vw] text-rgba(3,81,70,1) md:-top-[2.5%] md:left-[80%] md:-translate-x-[80%] md:text-[3vw]"
         >
           مشخصات محصول
         </h1>
@@ -33,7 +33,7 @@
             alt=""
           />
           <img
-            class="absolute -top-[20%] -left-1/4 w-2/5 max-md:hidden"
+            class="absolute -left-1/4 -top-[20%] w-2/5 max-md:hidden"
             src="SVGs/product-page-desktop_bg_line1.svg"
             alt=""
           />
@@ -45,7 +45,7 @@
         </div>
         <!-- information container -->
         <div
-          class="absolute bottom-0 left-0 right-0 top-[7.5%] flex h-full flex-col items-stretch justify-start gap-[2vw] md:flex-row md:justify-normal md:gap-[6vw]"
+          class="absolute bottom-[7.5%] left-0 right-0 top-[7.5%] flex flex-col items-stretch gap-6 md:flex-row md:gap-12"
         >
           <!-- product images -->
           <div
@@ -103,7 +103,7 @@
                 </div>
               </div>
               <div
-                class="md:basis5/6 flex basis-3/4 justify-center rounded-lg bg-white shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) max-md:h-[90vw] md:rounded-[1vw]"
+                class="flex basis-3/4 justify-center rounded-lg bg-white shadow-0px,4px,4px,0px shadow-rgba(0,0,0,25%) max-md:h-[90vw] md:rounded-[1vw]"
               >
                 <img
                   id="curImg"
@@ -116,32 +116,34 @@
           </div>
           <!-- product information -->
           <div
-            class="flex flex-col items-stretch px-[2.5%] py-[5%] md:basis-[50%]"
+            class="flex grow flex-col items-stretch justify-between px-4 min-[480px]:px-6 sm:px-8 md:basis-[50%]"
           >
-            <div class="border-b 2xl:border-b-2">
+            <div class="first:border-b 2xl:border-b-2">
               <h2
-                class="mb-[2.5%] pr-2 font-IR_Kelma text-[4vw] text-rgba(3,81,70,1) md:px-0 md:text-[2.5vw]"
+                class="mb-[2.5%] pr-2 font-IR_Kelma text-xl text-rgba(3,81,70,1) sm:text-4xl md:px-0 md:text-[2.5vw]"
               >
                 استار شیپ
                 <span
-                  class="font-Khand text-[2.5vw] tracking-tighter text-rgba(113,111,116,1) md:text-[2vw]"
+                  class="font-Khand text-sm tracking-tighter text-rgba(113,111,116,1) sm:text-lg md:text-[2vw]"
                   >(SpaceX Starship)</span
                 >
               </h2>
             </div>
             <div
-              class="flex items-center gap-2 border-b p-[2.5%] font-Khand md:px-0 2xl:border-b-2"
+              class="flex items-center gap-2 p-[2.5%] font-Khand md:px-0 2xl:border-b-2"
             >
               <div
                 class="relative basis-1/2 rounded-full bg-white py-2 shadow-0px,4px,11.7px,0px shadow-rgba(0,0,0,25%) md:basis-2/5"
               >
                 <div class="mx-[10%]">
                   <h6
-                    class="text-[3vw] text-rgba(113,111,116,1) md:text-[1.3vw]"
+                    class="text-sm text-rgba(113,111,116,1) min-[400px]:text-base sm:text-lg md:text-[1.3vw]"
                   >
                     جنس
                   </h6>
-                  <p class="text-[2.5vw] md:text-[1vw] md:tracking-tighter">
+                  <p
+                    class="text-3xs text-nowrap tracking-tighter min-[400px]:text-sm sm:text-base md:text-[1vw]"
+                  >
                     پلاستیک درجه یک و مقاوم
                   </p>
                 </div>
@@ -151,19 +153,21 @@
               >
                 <div class="mx-[10%]">
                   <h6
-                    class="text-[3vw] text-rgba(113,111,116,1) md:text-[1.3vw]"
+                    class="text-sm text-rgba(113,111,116,1) min-[400px]:text-base sm:text-lg md:text-[1.3vw]"
                   >
                     ابعاد
                   </h6>
-                  <p class="text-[2.5vw] md:text-[1vw] md:tracking-tighter">
+                  <p
+                    class="text-3xs tracking-tighter min-[400px]:text-sm sm:text-base md:text-[1vw]"
+                  >
                     ۳۴۰x ۲۰۰x ۴۰ میلی متر
                   </p>
                 </div>
               </div>
             </div>
-            <div class="border-b p-[2.5%] md:p-0 2xl:border-b-2">
+            <div class="odd:border-b odd:border-t md:p-0 2xl:border-b-2">
               <p
-                class="my-2 text-justify font-Khand text-[3.5vw] md:text-[1vw]"
+                class="my-2 text-justify font-Khand text-xs min-[400px]:text-base sm:text-base md:text-[1vw]"
               >
                 فضا پیمای اسپیس اکس استارشیپ و پرتابگر سوپرهوی یک سامانه حمل
                 انسان و محموله به مدار زمین، ماه، مریخ و حتی فراتر از آن است که
@@ -173,17 +177,19 @@
               </p>
             </div>
             <div
-              class="flex border-b p-[2.5%] font-Khand md:px-0 md:py-[1%] 2xl:border-b-2"
+              class="flex items-center p-[2.5%] font-Khand md:px-0 md:py-[1%] 2xl:border-b-2"
             >
               <img
-                class="w-[5vw] md:w-[2vw]"
+                class="w-1/12 md:w-[2vw]"
                 src="SVGs/product-page-truck-kun.svg"
                 alt=""
               />
-              <p class="mx-[2%] text-[4vw] md:text-[1.5vw]">ارسال رایگان</p>
+              <p class="mx-2 text-sm sm:text-base md:text-[1.5vw]">
+                ارسال رایگان
+              </p>
             </div>
             <div
-              class="flex p-[2.5%] font-Khand text-[5vw] md:p-0 md:text-[2.2vw]"
+              class="flex border-t p-[2.5%] font-Khand text-xl sm:text-4xl md:p-0 md:text-[2.2vw]"
             >
               <h3 class="text-white">
                 ۱,۷۹۹,۰۰۰
@@ -193,37 +199,41 @@
             <!-- product form -->
             <form
               action=""
-              class="mt-[10vw] flex justify-evenly md:mt-[7.5vw] md:justify-end md:gap-4"
+              class="flex justify-evenly md:mt-[7.5vw] md:justify-end md:gap-4"
             >
               <div
-                class="flex w-full basis-1/4 items-center justify-around rounded-[1.2em] border-2 border-rgba(3,81,70,1) md:basis-2/5 md:rounded-[1vw]"
+                class="flex w-full basis-1/4 items-center gap-2 rounded-2xl border-2 border-rgba(3,81,70,1) px-1 md:basis-2/5 md:rounded-[1vw]"
               >
                 <button
-                  class="mx-[5%] rounded-[1vw] bg-rgba(3,81,70,1) md:rounded-[0.25vw]"
+                  class="basis-1/3 rounded-lg bg-rgba(3,81,70,1) md:rounded-[0.25vw]"
                 >
                   <img
-                    class="w-[5vw] md:w-[2vw]"
+                    class="w-full md:w-[2vw]"
                     src="SVGs/product-page-plus.svg"
                     alt=""
                   />
                 </button>
-                <span class="text-[4vw] text-white md:text-[2vw]" for=""
+                <span
+                  class="text-2xl text-white sm:text-4xl md:text-[2vw]"
+                  for=""
                   >۱</span
                 >
                 <button
-                  class="mx-[5%] rounded-[1vw] bg-rgba(3,81,70,1) md:rounded-[0.25vw]"
+                  class="basis-1/3 rounded-lg bg-rgba(3,81,70,1) md:rounded-[0.25vw]"
                 >
                   <img
-                    class="w-[5vw] md:w-[2vw]"
+                    class="w-full md:w-[2vw]"
                     src="SVGs/product-page-minus.svg"
                     alt=""
                   />
                 </button>
               </div>
               <div
-                class="flex basis-[65%] rounded-[1.2em] border border-rgba(3,81,70,1) bg-rgba(3,81,70,1) px-[5%] py-[3%] font-semibold md:basis-2/5 md:rounded-[1vw]"
+                class="flex basis-[65%] items-center rounded-[1.2em] border border-rgba(3,81,70,1) bg-rgba(3,81,70,1) px-[5%] py-[3%] font-semibold md:basis-2/5 md:rounded-[1vw]"
               >
-                <button class="mx-auto text-[4vw] text-white md:text-[1vw]">
+                <button
+                  class="mx-auto text-xs text-white sm:text-base md:text-[1vw]"
+                >
                   <img
                     class="inline w-[8vw] md:w-[2vw]"
                     src="SVGs/product-page-Cart.svg"
@@ -376,7 +386,7 @@
             </p>
           </div>
           <div
-            class="reviewStars absolute right-[15%] top-[28%] mx-auto flex w-[70%] flex-col gap-[1.25vw] sm:gap-[2vw] font-Khand md:right-1/4 md:top-1/2 md:w-[40%] md:gap-[1.25vw] lg:gap-[1.5vw]"
+            class="reviewStars absolute right-[15%] top-[28%] mx-auto flex w-[70%] flex-col gap-[1.25vw] font-Khand sm:gap-[2vw] md:right-1/4 md:top-1/2 md:w-[40%] md:gap-[1.25vw] lg:gap-[1.5vw]"
           >
             <h2
               class="text-[3.5vw] font-semibold text-rgba(3,81,70,1) md:text-[1.5vw]"
@@ -384,120 +394,122 @@
               در مورد
               <span class="text-rgba(255,201,35,1)"> استار شیپ </span>
             </h2>
-            <div
-              class="flex max-h-[6vw] items-center gap-2 overflow-hidden md:max-h-[2vw] md:gap-3"
-            >
-              <div>
-                <p class="text-[3vw] md:text-[1vw]">امتیاز دهید</p>
-              </div>
-              <!-- review stars -->
-              <div
-                class="reviewStars flex w-[20vw] gap-[1vw] md:w-[1.8vw] md:gap-[0.5vw] 2xl:w-[10vw]"
-              >
-                <input
-                  class="hidden"
-                  type="radio"
-                  name="rating"
-                  id="rating-5"
-                />
-                <label for="rating-5">
-                  <svg
-                    viewBox="0 0 26 25"
-                    fill="none"
-                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke="#facc15"
-                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
-                      fill="none"
-                    />
-                  </svg>
-                </label>
-                <input
-                  class="hidden"
-                  type="radio"
-                  name="rating"
-                  id="rating-4"
-                />
-                <label for="rating-4">
-                  <svg
-                    viewBox="0 0 26 25"
-                    fill="none"
-                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke="#facc15"
-                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
-                      fill="none"
-                    />
-                  </svg>
-                </label>
-                <input
-                  class="hidden"
-                  type="radio"
-                  name="rating"
-                  id="rating-3"
-                />
-                <label for="rating-3">
-                  <svg
-                    viewBox="0 0 26 25"
-                    fill="none"
-                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke="#facc15"
-                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
-                      fill="none"
-                    />
-                  </svg>
-                </label>
-                <input
-                  class="hidden"
-                  type="radio"
-                  name="rating"
-                  id="rating-2"
-                />
-                <label for="rating-2">
-                  <svg
-                    viewBox="0 0 26 25"
-                    fill="none"
-                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke="#facc15"
-                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
-                      fill="none"
-                    />
-                  </svg>
-                </label>
-                <input
-                  class="hidden"
-                  type="radio"
-                  name="rating"
-                  id="rating-1"
-                />
-                <label for="rating-1">
-                  <svg
-                    viewBox="0 0 26 25"
-                    fill="none"
-                    class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke="#facc15"
-                      d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
-                      fill="none"
-                    />
-                  </svg>
-                </label>
-              </div>
-            </div>
+
             <!-- review form -->
             <form action="" class="flex flex-col gap-1">
+              <div
+                class="flex max-h-[6vw] items-center gap-2 overflow-hidden md:max-h-[2vw] md:gap-4"
+              >
+                <div>
+                  <p class="text-[3vw] md:text-[1vw]">امتیاز دهید</p>
+                </div>
+                <!-- review stars -->
+                <div
+                  dir="ltr"
+                  class="reviewStars flex w-fit justify-end gap-[1vw]"
+                >
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="rating"
+                    id="rating-5"
+                  />
+                  <label for="rating-5">
+                    <svg
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke="#facc15"
+                        d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                        fill="none"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="rating"
+                    id="rating-4"
+                  />
+                  <label for="rating-4">
+                    <svg
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke="#facc15"
+                        d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                        fill="none"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="rating"
+                    id="rating-3"
+                  />
+                  <label for="rating-3">
+                    <svg
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke="#facc15"
+                        d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                        fill="none"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="rating"
+                    id="rating-2"
+                  />
+                  <label for="rating-2">
+                    <svg
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke="#facc15"
+                        d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                        fill="none"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="hidden"
+                    type="radio"
+                    name="rating"
+                    id="rating-1"
+                  />
+                  <label for="rating-1">
+                    <svg
+                      viewBox="0 0 26 25"
+                      fill="none"
+                      class="h-[8vw] w-[5vw] *:hover:fill-yellow-400 md:w-[2vw]"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke="#facc15"
+                        d="M13.5661 0.544577L16.417 7.20202C16.5243 7.45257 16.6952 7.66906 16.9121 7.82888C17.1289 7.98871 17.3837 8.08601 17.6498 8.11064L24.595 8.7482C25.3808 8.8653 25.6943 9.85199 25.1245 10.4201L19.8928 14.9199C19.4692 15.2842 19.2765 15.8567 19.393 16.4097L20.9138 23.6982C21.0472 24.4984 20.2275 25.1099 19.5243 24.7304L13.4623 21.0959C13.2337 20.9585 12.9734 20.8861 12.7083 20.8861C12.4431 20.8861 12.1828 20.9585 11.9542 21.0959L5.89221 24.7282C5.19112 25.1056 4.3693 24.4962 4.50274 23.696L6.02353 16.4075C6.13791 15.8545 5.94728 15.282 5.52366 14.9177L0.289837 10.4223C-0.277813 9.85632 0.0356655 8.86747 0.819362 8.75036L7.76461 8.11281C8.03071 8.08818 8.28547 7.99088 8.50231 7.83105C8.71914 7.67122 8.8901 7.45474 8.99734 7.20419L11.8483 0.546746C12.202 -0.181887 13.2145 -0.181887 13.5661 0.544577Z"
+                        fill="none"
+                      />
+                    </svg>
+                  </label>
+                </div>
+              </div>
               <label
                 class="mb-[1%] text-[3vw] text-rgba(113,111,116,1) md:text-[1vw]"
                 for="review"

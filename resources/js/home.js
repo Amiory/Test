@@ -47,93 +47,93 @@ for (let i = 0; i < btnUp.length; i++) {
   });
 }
 
-//product slider
-let slideIndex = 0;
+// //product slider
+// let slideIndex = 0;
 
-function showProduct(index) {
-  let offset = 0;
-  const products = document.querySelectorAll(".slider div.product");
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    if (index >= products.length - 3) {
-      // currentSlide = 0;
-      document.getElementById("nextProduct").style.display = "none";
-    } else if (index <= 0) {
-      // currentSlide = slides.length - 1;
-      document.getElementById("prevProduct").style.display = "none";
-    }
-    // else {
-    //     currentSlide = index;
-    // }
-    offset = index * 32.25;
-  } else {
-    if (index >= products.length - 1) {
-      // currentSlide = 0;
-      document.getElementById("nextProduct").style.display = "none";
-    } else if (index <= 0) {
-      // currentSlide = slides.length - 1;
-      document.getElementById("prevProduct").style.display = "none";
-    }
-    // else {
-    //     currentSlide = index;
-    // }
-    offset = index * 100;
-  }
+// function showProduct(index) {
+//   let offset = 0;
+//   const products = document.querySelectorAll(".slider div.product");
+//   if (window.matchMedia("(min-width: 768px)").matches) {
+//     if (index >= products.length - 3) {
+//       // currentSlide = 0;
+//       document.getElementById("nextProduct").style.display = "none";
+//     } else if (index <= 0) {
+//       // currentSlide = slides.length - 1;
+//       document.getElementById("prevProduct").style.display = "none";
+//     }
+//     // else {
+//     //     currentSlide = index;
+//     // }
+//     offset = index * 32.25;
+//   } else {
+//     if (index >= products.length - 1) {
+//       // currentSlide = 0;
+//       document.getElementById("nextProduct").style.display = "none";
+//     } else if (index <= 0) {
+//       // currentSlide = slides.length - 1;
+//       document.getElementById("prevProduct").style.display = "none";
+//     }
+//     // else {
+//     //     currentSlide = index;
+//     // }
+//     offset = index * 100;
+//   }
 
-  slideIndex = index;
-  document.querySelector(".slider").style.transform = `translateX(${offset}%)`;
-}
+//   slideIndex = index;
+//   document.querySelector(".slider").style.transform = `translateX(${offset}%)`;
+// }
 
-function changeProduct(direction) {
-  if (direction == 1) {
-    document.getElementById("prevProduct").style.display = "block";
-  } else {
-    document.getElementById("nextProduct").style.display = "block";
-  }
-  showProduct(slideIndex + direction);
-}
+// function changeProduct(direction) {
+//   if (direction == 1) {
+//     document.getElementById("prevProduct").style.display = "block";
+//   } else {
+//     document.getElementById("nextProduct").style.display = "block";
+//   }
+//   showProduct(slideIndex + direction);
+// }
 
-//review slider
-let currentSlide = 0;
+// //review slider
+// let currentSlide = 0;
 
-function showSlide(index) {
-  let offset = 0;
-  const slides = document.querySelectorAll(".comment-wrapper");
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    if (index >= slides.length - 3) {
-      // currentSlide = 0;
-      document.getElementById("nextComment").style.display = "none";
-    } else if (index <= 0) {
-      // currentSlide = slides.length - 1;
-      document.getElementById("prevComment").style.display = "none";
-    }
-    // else {
-    //     currentSlide = index;
-    // }
-    offset = index * 33.3;
-  } else {
-    if (index >= slides.length - 1) {
-      // currentSlide = 0;
-      document.getElementById("nextComment").style.display = "none";
-    } else if (index <= 0) {
-      // currentSlide = slides.length - 1;
-      document.getElementById("prevComment").style.display = "none";
-    }
-    // else {
-    //     currentSlide = index;
-    // }
-    offset = index * 104.45;
-  }
+// function showSlide(index) {
+//   let offset = 0;
+//   const slides = document.querySelectorAll(".comment-wrapper");
+//   if (window.matchMedia("(min-width: 768px)").matches) {
+//     if (index >= slides.length - 3) {
+//       // currentSlide = 0;
+//       document.getElementById("nextComment").style.display = "none";
+//     } else if (index <= 0) {
+//       // currentSlide = slides.length - 1;
+//       document.getElementById("prevComment").style.display = "none";
+//     }
+//     // else {
+//     //     currentSlide = index;
+//     // }
+//     offset = index * 33.3;
+//   } else {
+//     if (index >= slides.length - 1) {
+//       // currentSlide = 0;
+//       document.getElementById("nextComment").style.display = "none";
+//     } else if (index <= 0) {
+//       // currentSlide = slides.length - 1;
+//       document.getElementById("prevComment").style.display = "none";
+//     }
+//     // else {
+//     //     currentSlide = index;
+//     // }
+//     offset = index * 104.45;
+//   }
 
-  currentSlide = index;
-  document.querySelector(".comment-container").style.transform =
-    `translateX(${offset}%)`;
-}
+//   currentSlide = index;
+//   document.querySelector(".comment-container").style.transform =
+//     `translateX(${offset}%)`;
+// }
 
-function changeSlide(direction) {
-  if (direction == 1) {
-    document.getElementById("prevComment").style.display = "block";
-  } else {
-    document.getElementById("nextComment").style.display = "block";
-  }
-  showSlide(currentSlide + direction);
-}
+// function changeSlide(direction) {
+//   if (direction == 1) {
+//     document.getElementById("prevComment").style.display = "block";
+//   } else {
+//     document.getElementById("nextComment").style.display = "block";
+//   }
+//   showSlide(currentSlide + direction);
+// }

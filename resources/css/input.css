@@ -36,7 +36,9 @@
   padding: 2.5vw !important;
 }
 .products .swiper-button-next,
-.products .swiper-button-prev {
+.products .swiper-button-prev,
+.reviews .swiper-button-next,
+.reviews .swiper-button-prev {
   color: #fff !important;
   background-color: rgba(3, 81, 70, 1);
   display: flex;
@@ -47,8 +49,10 @@
   border-radius: 50%;
 }
 .products .swiper-button-next::after,
-.products .swiper-button-prev::after {
-  display: none; 
+.products .swiper-button-prev::after,
+.reviews .swiper-button-next::after,
+.reviews .swiper-button-prev::after {
+  display: none;
 }
 @tailwind base;
 @tailwind components;

@@ -37,7 +37,7 @@ module.exports = {
         "rgba(190,189,189,1)": "rgba(190, 189, 189, 1)",
         "rgba(113,111,116,1)": "rgba(113, 111, 116, 1)",
         "rgba(235,238,239,1)": "rgba(235, 238, 239, 1)",
-        "rgba(75,85,99,1)": "rgba(75, 85, 99, 1)"
+        "rgba(75,85,99,1)": "rgba(75, 85, 99, 1)",
       },
       boxShadow: {
         "0px,16px,46px,0px": "0px 16px 46px 0px",
@@ -52,6 +52,10 @@ module.exports = {
         "0px,0px,4px,0px": "0px 0px 4px 0px",
         "0px,4px,11.7px,0px": "0px 4px 11.7px 0px",
         "0px,4px,24px,0px": "0px 4px 24px 0px",
+      },
+      fontSize: {
+        "2xs": "0.625rem",
+        "3xs": "0.5rem",
       },
       transitionProperty: {
         height: "height",
